@@ -1,4 +1,5 @@
 TutorialDemo::Application.routes.draw do
+  get "users/new"
   match '/signup',  to: "users#new",   via: 'get'
   root to: "static_pages#home"
   match '/help',    to: 'static_pages#help',    via: 'get'
